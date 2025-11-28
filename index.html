@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little flower - Excellence in Education</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #34495e;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .info-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-card h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+
+        .facilities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .facility-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .facility-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item {
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-item strong {
+            display: inline-block;
+            width: 100px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 1.5rem;
+            border-left: 4px solid #ffc107;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🎓</div>
+        <h1>Little Flower English Medium High School</h1>
+        <p>Nurturing Minds, Building Futures</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Our School</h2>
+            <p>Welcome to Little  Flower E.M High School, where we believe in providing quality education that nurtures every child's potential. Established in 2001, we have been committed to academic excellence and holistic development for over 25 years.</p>
+            
+            <div class="about-grid">
+                <div class="info-card">
+                    <h3>📚 Our Vision</h3>
+                    <p>To create lifelong learners who are confident, creative, and compassionate citizens of tomorrow.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🎯 Our Mission</h3>
+                    <p>Providing world-class education with focus on character building, innovation, and social responsibility.</p>
+                </div>
+                <div class="info-card">
+                    <h3> Our Values</h3>
+                    <p>Integrity, Excellence, Respect, Innovation, and Community Service form the foundation of our institution.</p>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <strong>⭐ Key Highlights:</strong> State Board Affiliation | 600+ Students | 50 Experienced Faculty | Modern Infrastructure | Sports Excellence | NCC Training Program 
+                
+                <strong>🏆 Awards:</strong> Dynamic Schools 2024, EDU LEADERS Summit Awards 2024
+                
+            </div>
+        </section>
+
+        <section id="facilities">
+            <h2>Our Facilities</h2>
+            <div class="facilities">
+                <div class="facility-item">
+                    <div class="facility-icon">💻</div>
+                    <h3>Computer Lab</h3>
+                    <p>Modern computers with internet facility</p>
+                </div>
+                <div class="facility-item">
+                    <div class="facility-icon">🔬</div>
+                    <h3>Science Labs</h3>
+                    <p>Well-equipped Physics, Chemistry labs</p>
+                </div>
+                <div class="facility-item">
+                    <div class="facility-icon">📖</div>
+                    <h3>Library</h3>
+                    <p>1000+ books and digital resources</p>
+                </div>
+                <div class="facility-item">
+                    <div class="facility-icon">⚽</div>
+                    <h3>Sports Ground</h3>
+                    <p>Football, Cricket facilities</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="academics">
+            <h2>Academic Programs</h2>
+            <div class="about-grid">
+                <div class="info-card">
+                    <h3>Pre-Primary Section</h3>
+                    <p><strong>Classes:</strong> N1 to U.K.G<br>
+                    Focus on creative learning methods and activity-based systems.Includes Bhagavath Geetha slokas recitation. </p>
+                </div>
+                <div class="info-card">
+                    <h3>Primary Section</h3>
+                    <p><strong>Classes:</strong> 1st to 5th<br>
+                    Focus on foundational learning through activity-based teaching methods and memory practice to sharpen both left and right brain. </p>
+                </div>
+                <div class="info-card">
+                    <h3>Middle School</h3>
+                    <p><strong>Classes:</strong> 6th to 8th<br>
+                    Comprehensive curriculum with emphasis on critical thinking and creativity. Conducting seminars and quiz programs for children and practicing English sentences to improve spoken skills.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Senior Secondary</h3>
+                    <p><strong>Classes:</strong> 9th to 12th<br>
+                    Competitive-based techniques for students. Result-oriented methods to help them excel in exams and achieve 98% success rate.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <div class="contact-item">
+                    <strong>📍 Address:</strong> HBS Colony ,Near LIC Office ,Yemmiganur,Kurnool dist (AP)
+                </div>
+                <div class="contact-item">
+                    <strong>📞 Phone:</strong> +91 9848726619, +917989614194
+                </div>
+                <div class="contact-item">
+                    <strong>📧 Email:</strong> littleflowerschool228@gmail.com
+                </div>
+                <div class="contact-item">
+                    <strong>🕐 Office Hours:</strong> Monday - Saturday, 9:00 AM - 5:00 PM
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Liitle Flower EM High School. All Rights Reserved.</p>
+        <p>Empowering Students, Enriching Lives</p>
+    </footer>
+</body>
+</html>
